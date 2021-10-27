@@ -50,7 +50,7 @@ with open(input_file, newline='', encoding ='utf-8') as csvfile:
         
         # DESCRIPTION
         # settings are valid for all text added to 'g'
-        desc = textwrap.wrap(EVENT_DESC, 33)
+        desc = textwrap.wrap(EVENT_DESC, 30)
         for i, line in enumerate(desc):
             description = dwg.g(class_="sriracha16")
             description.add(dwg.text(line, insert=('28%', int(270/3) + 28 * (i + 4)),fill='#36405C'))
