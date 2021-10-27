@@ -39,7 +39,7 @@ with open(input_file, newline='', encoding ='utf-8') as csvfile:
 
 
         # IMAGE
-        image = dwg.image("Sandwich.jpeg", insert=("0%", "0%"), size=("100%", "100%"))
+        image = dwg.image("https://raw.githubusercontent.com/leo1103/csv_to_svg/master/Sandwich.jpg", insert=("0%", "0%"), size=("100%", "100%"))
         image.fit(horiz='center', vert='middle', scale='meet')
         dwg.add(image)
         
